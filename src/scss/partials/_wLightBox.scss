@@ -1,0 +1,63 @@
+@import "variables";
+@import "globalesMixin";
+
+//*********************************************
+//*********************************************
+// Le widget lightBox
+//*********************************************
+//*********************************************
+.hidden{
+	background-color: rgba(0,0,0,0.5);
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1000;
+	display: flex;
+}
+
+.lightBox{
+	color: $couleurBasique;
+	width: 80vw;
+	height: 80vh;
+	margin: auto;
+	border-radius: $rounding;
+	display: flex;
+	flex-orientation: row;
+	box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.75);
+}
+
+.lbMessage{
+	background-color: $messageColor;
+	border-top-left-radius: $rounding;
+	border-bottom-left-radius: $rounding;
+	width: 5%;
+	height: 100%;
+}
+
+.lbWarning{
+	background-color: $warningColor;
+	border-top-left-radius: $rounding;
+	border-bottom-left-radius: $rounding;
+	width: 5%;
+	height: 100%;
+}
+
+.lbHide {
+	display: none;
+}
+
+.lbShow{
+	display: flex;
+}
+
+.lbRight{
+	background-color: white;
+	border-top-right-radius: $rounding;
+	border-bottom-right-radius: $rounding;
+	width: 95%;
+	height: 100%;
+	padding: 0px 10px 0px 5px;
+    font-size: $fontNormal;
+}

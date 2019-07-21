@@ -1,0 +1,20 @@
+@mixin verticalFlex{
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+@mixin horizontalFlex{
+    display: flex;  
+    flex-direction: row; 
+    justify-content: stretch; 
+}
+
+@mixin top{
+    height: $topHeight;
+    line-height: $topHeight;
+    width: 100vw;
+    overflow: hidden;
+    color: $couleurTitre;
+    font-size: $fontTitle;
+}

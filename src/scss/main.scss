@@ -1,0 +1,54 @@
+//=========================================================
+//=========================================================
+//=  partials
+//=========================================================
+//=========================================================
+@import "partials/color";
+@import "partials/variables";
+@import "partials/globalesMixin";
+@import "partials/frameSet";
+@import "partials/wMenu";
+@import "partials/wLightBox";
+@import "partials/wList";
+@import "partials/wRadioCheckBox";
+@import "partials/wButton";
+@import "partials/wWait";
+
+//=========================================================
+//=========================================================
+//= Le style principale
+//=========================================================
+//=========================================================
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    margin: 0px;
+    padding: 0px;   
+    color: $couleurBasique;
+    background-color: $couleurDeFond;
+    overflow: hidden;
+}
+
+// Titre principale d'un page
+.top{
+    @include top;
+    @include verticalFlex;
+    background-color: $fondFonce;
+}
+
+.topTittle{
+    padding-left: 10px;
+}
+
+// Le container principale de la pgae
+.main{
+    height: $mainHeight;
+    width: 100vw;
+    overflow: hidden;
+    position: relative; // Pour le positionnement des prochaine div
+}
+
+

@@ -1,0 +1,32 @@
+{
+  "name": "syldate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "browser": {
+    "vue": "vue/dist/vue.common.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t vueify -e main.js -o build.js"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "css-loader": "^3.0.0",
+    "grunt": "^1.0.4",
+    "grunt-browserify": "^5.3.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-env": "^0.4.4",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vue": "*",
+    "vueify": "*",
+    "vuex": "^3.1.1"
+  },
+  "keywords": [],
+  "author": "Lentz Bruno",
+  "license": "ISC"
+}

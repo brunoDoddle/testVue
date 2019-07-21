@@ -1,0 +1,33 @@
+@import "variables";
+@import "globalesMixin";
+
+//*********************************************
+//*********************************************
+// Le widget lightBox
+//*********************************************
+//*********************************************/
+.wait{
+	background-color: rgba(255,255,255,0.5);
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1000;
+	display: flex;
+}
+
+.waitMessage{
+	color: $couleurBasique;
+	position: relative;
+	margin: auto;
+	font-size: 2rem;
+}
+
+.hHide {
+	display: none;
+}
+
+.hShow{
+	display: flex;
+}

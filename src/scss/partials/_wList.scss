@@ -1,0 +1,42 @@
+@import "variables";
+@import "globalesMixin";
+
+//*********************************************
+//*********************************************
+// Le widget list
+//*********************************************
+//*********************************************
+
+.liste{
+	list-style: none;
+    width: 100%;
+    height: 100%;
+	margin: 0;
+	padding: 0;	
+	overflow: auto;
+}
+
+.listElement{
+	width: 100%;
+	//height: 2em;
+    line-height: 2rem;
+    font-size: $fontNormal;
+    color: $couleurDeFond;
+    border-bottom: thin solid $fondFonce;
+    background-color: $fondFonce2;
+    display: flex;
+    justify-content: space-between;
+    margin: 1px 0;
+    //padding-left: 10px;
+}
+
+.elementTitle{
+    line-heigt:50%;
+    margin-left: 10px;
+}
+
+.exit{
+    @include topButton;
+    @include ImageContains;
+    background-image:url("../ressources/action.svg");  
+}
